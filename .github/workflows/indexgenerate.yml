@@ -16,7 +16,9 @@ jobs:
       with:
         python-version: '3.7'  
     - name: merege in master changes
-      run: git merge -X theirs master
+      run: |
+        git fetch --all
+        git merge -X theirs master
     - name: Create local changes
       run: |
         python code/generate_index.py
