@@ -3,7 +3,7 @@
 ## [ADOPTED](README.md#adopted)
 
 ## [ACCEPTED](README.md#accepted)
-* [0003: Protocols-x](concepts/0003-protocols/README.md) (2019-04-01, [9 impls](concepts/0003-protocols/README.md#implementations) &mdash; [`concept`](/tags.md#concept))
+* [0003: Protocols](concepts/0003-protocols/README.md) (2019-04-01, [9 impls](concepts/0003-protocols/README.md#implementations) &mdash; [`concept`](/tags.md#concept))
 * [0004: Agents](concepts/0004-agents/README.md) (2019-01-15, [9 impls](concepts/0004-agents/README.md#implementations) &mdash; [`concept`](/tags.md#concept))
 * [0005: DID Communication](concepts/0005-didcomm/README.md) (2019-11-21, [9 impls](concepts/0005-didcomm/README.md#implementations) &mdash; [`concept`](/tags.md#concept))
 * [0006: SSI Notation](concepts/0006-ssi-notation/README.md) (2018-09-01, [1 impl](concepts/0006-ssi-notation/README.md#implementations) &mdash; [`concept`](/tags.md#concept))
