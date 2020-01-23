@@ -1,4 +1,4 @@
-# Aries RFC 0003: Protocols-x
+# Aries RFC 0003: Protocols
 
 - Authors: [Daniel Hardman](daniel.hardman@gmail.com)
 - Status: [ACCEPTED](/README.md#accepted)
