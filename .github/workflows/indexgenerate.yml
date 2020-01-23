@@ -18,7 +18,7 @@ jobs:
     - name: merege in master changes
       run: |
         git fetch --all
-        git merge -X theirs master
+        git merge -X theirs origin/master
     - name: Create local changes
       run: |
         python code/generate_index.py
