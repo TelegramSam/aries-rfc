@@ -36,7 +36,7 @@ When live delivery is enabled, messages that arrive when an existing connection 
 
 ## Reference
 
-Each message sent should use the ~transport decorator as follows. This has been omitted from the examples for brevity.
+Each message sent should use the ~transport decorator as follows, which has been adopted from [RFC 0092 transport return route](/features/0092-transport-return-route/README.md) protocol. This has been omitted from the examples for brevity.
 
 ```json=
 "~transport": {
@@ -57,7 +57,7 @@ Sent by the _recipient_ to the _mediator_ to request a `status` message.
 }
 ```
 
-- `recipient_key` is optional. When specified only return status related to that recipient key. This allows the _Recipient_ to discover if any messages are in the queue that were sent to a specific key.
+- `recipient_key` is optional. When specified only return status related to that recipient key. This allows the _Recipient_ to discover if any messages are in the queue that were sent to a specific key. You can find more details about `recipient_key` and how it's managed in [0211-route-coordination](https://github.com/hyperledger/aries-rfcs/blob/master/features/0211-route-coordination/README.md).
 
 ### Status
 
@@ -79,9 +79,9 @@ Status details about waiting messages
 
 `message_count` is the only required attribute. The others may be present if offered by the _message_holder_.
 
-`duration_waited` is in seconds, and is the longest  delay of any message in the queue.
+`longest_waited_seconds` is in seconds, and is the longest delay of any message in the queue.
 
-`total_size` is in bytes.
+`total_bytes` represents the total size of all messages.
 
 If a `recipient_key` was specified in the status-request message, the matching value MUST be specified in the `recipient_key` attribute of the status message.
 
